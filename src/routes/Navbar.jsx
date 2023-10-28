@@ -24,7 +24,7 @@ function Navegation() {
                 
                 <Nav.Link  as={Link} to="/about">Nosotros</Nav.Link>
                 <Nav.Link  as={Link} to="/reserva">Reserva Aquí</Nav.Link>
-                <Nav.Link as={Link} to="/crudmenu">Crud Menu</Nav.Link>
+                <Nav.Link as={Link} to="/crudmenu">Administrador</Nav.Link>
                 
                 <NavDropdown title="Log In" id="basic-nav-dropdown">
                   <Login />

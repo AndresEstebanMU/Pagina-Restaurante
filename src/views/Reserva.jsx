@@ -93,72 +93,76 @@ const Reserva = () => {
 
   return (
     <section>
-      <h1>Realizar una Reserva</h1>
+      <h1 className="text-center">Realizar una Reserva</h1>
       <form onSubmit={reservar}>
-        <div>
+        <div className="text-center mt-3">
           <input
             type="text"
             name="nombre"
-            placeholder="Ingresa tu nombre!"
+            placeholder="Ingresa tu nombre"
             value={cliente.nombre}
             onChange={capturarInputs}
-          />
+            className="input-anchos input-separados"
+          />  <br></br>
           <input
-            type="text"
+            type="email"
             name="email"
-            placeholder="Ingresa tu email!"
+            placeholder="Ingresa tu email"
             value={cliente.email}
             onChange={capturarInputs}
-          />
+            className="input-anchos input-separados"
+          /> <br></br>
           <input
             type="text"
             name="mesa"
-            placeholder="Ingresa la mesa!"
+            placeholder="Ingresa Número de Mesa (1-25)"
             value={cliente.mesa}
             onChange={capturarInputs}
-          />
+            className="input-anchos input-separados"
+          />  <br></br>
           <input
             type="date"
             name="fecha"
             value={cliente.fecha}
             onChange={capturarInputs}
-          />
+
+          /> <br></br>
         </div>
-        <button>{editingId ? "Guardar Cambios" : "Reservar"}</button>
+        <div className="text-center" >
+          <button className="boton-reserva">{editingId ? "Guardar Cambios" : "Reservar"}</button>
+        </div>
       </form>
-      <div className="container">
-        <table>
+      {/* <div className="container mt-3"> */}
+      <div className="tabla-centro">
+        <table className="tabla-resultados table-titulos">
           <thead>
             <tr>
-              <th>#</th>
+              <th>ID Reserva</th>
               <th>Cliente</th>
               <th>Email</th>
               <th>Mesa</th>
               <th>Fecha</th>
-              <th>Action</th>
+              <th>Modificar</th>
             </tr>
           </thead>
           <tbody>
             {reservas.map((reserva) => (
               <tr key={reserva.id}>
-                <td>{reserva.id}</td>
-                <td>{reserva.nombre}</td>
-                <td>{reserva.email}</td>
-                <td>{reserva.mesa}</td>
-                <td>{reserva.fecha}</td>
+                <td data-titulo="ID Reserva:">{reserva.id}</td>
+                <td data-titulo="Nombre:">{reserva.nombre}</td>
+                <td data-titulo="email:">{reserva.email}</td>
+                <td data-titulo="Mesa:">{reserva.mesa}</td>
+                <td data-titulo="Fecha:">{reserva.fecha}</td>
                 <td>
-                  <Button
-                    variant="warning"
-                    onClick={() => editarReserva(reserva.id)}
-                  >
-                    Editar
-                  </Button>
-                  <Button
-                    variant="danger"
-                    onClick={() => eliminarReserva(reserva.id)}
-                  >
-                    Eliminar
-                  </Button>
+                  <div>
+                  <Button variant="info" onClick={() => editarReserva(reserva.id)}
+                  >-Editar-</Button>
+                  </div>
+                  <div className="container mt-1">
+                  <Button variant="danger" onClick={() => eliminarReserva(reserva.id)}
+                  >Eliminar</Button>
+                  </div>
+                 
                 </td>
               </tr>
             ))}

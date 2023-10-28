@@ -86,74 +86,80 @@ const CrudMenu = () => {
 
     return (
         <section>
-            <h1>Página Reservada para Administradores</h1>
-            <h2>Agregar un Plato</h2>
+            <h1 className="text-center">Página Reservada para Administradores</h1>
+            <h2 className="text-center">Agregar un Plato</h2>
             <form onSubmit={reservar}>
-                <div>
+                <div className="text-center mt-3">
                     <input
                         type="text"
                         name="nombre"
                         placeholder="Nombre del Plato"
                         value={cliente.nombre}
                         onChange={capturarInputs}
-                    />
+                        className="input-anchos input-separados"
+                    /> <br></br>
                     <input
                         type="text"
                         name="detalle"
                         placeholder="Ingresa los Ingredientes"
                         value={cliente.detalle}
                         onChange={capturarInputs}
-                    />
+                        className="input-anchos input-separados"
+                    /> <br></br>
                     <input
                         type="text"
                         name="precio"
                         placeholder="Ingresa el Precio"
                         value={cliente.precio}
                         onChange={capturarInputs}
-                    />
+                        className="input-anchos input-separados"
+                    /> <br></br>
                     <input
                         type="url"
                         name="imagen"
                         placeholder="Ingresa URL imagen"
                         value={cliente.imagen}
                         onChange={capturarInputs}
-                    />
+                        className="input-anchos  input-separados"
+                    />  <br></br>
+                </div> 
+                <div className="text-center" >
+                    <button className="boton-reserva">{editingId ? "Guardar Cambios" : "Agregar Plato"}</button>
                 </div>
-                <button>{editingId ? "Guardar Cambios" : "Agregar Plato"}</button>
+
             </form>
-            <div className="container">
-                <table className="tabla-resultados">
+            <div className="tabla-centro">
+                <table className="tabla-resultados table-titulos">
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>ID Plato</th>
                             <th>Plato</th>
                             <th>Ingredientes</th>
                             <th>Precio</th>
                             <th>URL Imagen</th>
-                            <th>Acción</th>
+                            <th>Imagen</th>
+                            <th>Modificar</th>
                         </tr>
                     </thead>
                     <tbody>
                         {reservas.map((reserva) => (
                             <tr key={reserva.id}>
-                                <td>{reserva.id}</td>
-                                <td>{reserva.nombre}</td>
-                                <td>{reserva.detalle}</td>
-                                <td>{reserva.precio}</td>
-                                <td>{reserva.imagen}</td>
+                                <td data-titulo="Id Plato:">{reserva.id}</td>
+                                <td data-titulo="Plato: ">{reserva.nombre}</td>
+                                <td data-titulo="Ingredientes: ">{reserva.detalle}</td>
+                                <td data-titulo="Precio: $">{reserva.precio}</td>
+                                <td data-titulo="URL:">{reserva.imagen}</td>
+                                <td><img src={reserva.imagen} alt="Imagen del Plato" style={{ width: "10rem", height: "180px" }} /></td>
                                 <td>
-                                    <Button
-                                        variant="warning"
-                                        onClick={() => editarReserva(reserva.id)}
-                                    >
-                                        Editar
-                                    </Button>
-                                    <Button
-                                        variant="danger"
-                                        onClick={() => eliminarReserva(reserva.id)}
-                                    >
-                                        Eliminar
-                                    </Button>
+                                    <div>
+                                        <Button variant="info" onClick={() => editarReserva(reserva.id)}
+                                        >-Editar-</Button>
+                                    </div>
+                                    <div className="container mt-1">
+                                        <Button variant="danger" onClick={() => eliminarReserva(reserva.id)}
+                                        >Eliminar</Button>
+                                    </div>
+
                                 </td>
                             </tr>
                         ))}
@@ -165,3 +171,5 @@ const CrudMenu = () => {
 };
 
 export default CrudMenu;
+
+

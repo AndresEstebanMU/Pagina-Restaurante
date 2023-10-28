@@ -433,12 +433,12 @@ footer {
 
 
 /* Nosotros */
-/* #about-fondo {
+#about-fondo {
   background-color: #F9F1EF;
-} */
+}
 
 .about {
-  background-color: #FFF;
+  background-color: #F9F1EF;
   margin: auto;
   max-width: 900px;
   text-align: center;
@@ -464,4 +464,233 @@ footer {
 }
 
 
-/* dnhsgfkjgdkjshdkgj */
+/* agregados */
+
+.tabla-resultados {
+  border: 1px solid #000;
+  /* Establece un borde sólido de 1 píxel de ancho y color negro */
+  border-collapse: collapse;
+  /* Combina los bordes de las celdas para que se vean como uno solo */
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 400px;
+
+}
+
+.tabla-resultados th,
+.tabla-resultados td {
+  border: 1px solid #000;
+  /* Aplica bordes a las celdas (th y td) */
+  padding: 8px;
+  /* Agrega espacio interno para que el contenido no esté pegado al borde */
+  max-width: auto;
+  overflow: auto;
+
+}
+
+/* Centrar los contenidos de la tabla */
+.tabla-centro {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  max-width: auto;
+}
+
+/* Ajustar la tabala 1050px */
+@media (max-width: 1050px) {
+  .tabla-resultados {
+    border: 0px; /* Elimina los bordes de la tabla */
+    
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 400px;
+  }
+
+  .tabla-resultados th,
+  .tabla-resultados td {
+    border: 0px; /* Elimina los bordes de la tabla */
+    padding: 8px;
+    /* Agrega espacio interno para que el contenido no esté pegado al borde */
+    max-width: auto;
+    overflow: auto;
+
+  }
+
+ td {
+    text-align: left;
+    max-width: auto;
+  }
+
+  table {
+    width: 100%;
+    
+  }
+
+  table tr {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  table td[data-titulo] {
+    display: flex;
+  }
+
+  table td[data-titulo]::before {
+    content: attr(data-titulo);
+    text-align: left;
+    width: 100px;
+    color: blue;
+    font-weight: bold;
+
+  }
+
+  table thead {
+    display: none;
+  }
+}
+
+.input-anchos {
+  width: 300px;
+}
+
+.input-separados {
+  margin-bottom: 0px;
+}
+
+.table-titulos th {
+  text-align: center;
+}
+
+/* td:nth-child(5) {
+  text-align: left;
+} */
+
+
+td {
+  text-align: center;
+  /* Centra el contenido de todas las celdas */
+  max-width: auto;
+}
+
+
+/*ajusta la tabla hasta 450px */
+
+@media (max-width: 450px) {
+  .tabla-resultados {
+    border: 0px; /* Elimina los bordes de la tabla */
+    
+    margin-bottom: 1px;
+    text-align: left;
+    max-width: auto;
+    
+    
+  }
+
+  .tabla-resultados th,
+  .tabla-resultados td {
+    border: 0px; /* Elimina los bordes de la tabla */
+    padding: 8px;
+    /* Agrega espacio interno para que el contenido no esté pegado al borde */
+    max-width: auto;
+    overflow: auto;
+
+  }
+
+ td {
+    text-align: left;
+    max-width: auto;
+  }
+
+  table {
+    width: 90%;
+    
+  }
+
+  table tr {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  table td[data-titulo] {
+    display: flex;
+    width:min-content;
+  }
+
+  table td[data-titulo]::before {
+    content: attr(data-titulo);
+    text-align: left;
+    width: 100px;
+    color: blue;
+    font-weight: bold;
+
+  }
+
+  table thead {
+    display: none;
+  }
+}
+
+.input-anchos {
+  width: 300px;
+}
+
+.input-separados {
+  margin-bottom: 0px;
+}
+
+.table-titulos th {
+  text-align: center;
+}
+
+/* td:nth-child(5) {
+  text-align: left;
+} */
+
+
+td {
+  text-align: center;
+  /* Centra el contenido de todas las celdas */
+  max-width: auto;
+}
+
+
+.boton-reserva {
+  background-color: blue;
+  color: white;
+  border: blue;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.boton-reserva:hover {
+  background-color: green;
+
+}
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+}
+
+/* otros */
+
+#menu-fondo {
+  background-color: #F9F1EF;
+}

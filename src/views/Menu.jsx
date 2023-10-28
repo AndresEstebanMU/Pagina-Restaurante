@@ -29,11 +29,11 @@ const Menu = () => {
 
   return (
     //Aquí va el menú
-    <div>
+    <div id="menu-fondo">
         <h1 className="text-center">Menú</h1>
-        <CardGroup>
+        <CardGroup className="justify-content-center mt-3">
             {menu.map((plato) => (
-                <div key={plato.id}>    
+                <div key={plato.id} className="mx-3 ms-1 text-center">    
                     <Card style={{width: "18rem", height:"380px"}}>
                         <Card.Img style={{height: "200px"}} variant="top" src={plato.imagen} alt={plato.nombre} />
                         <Card.Body>

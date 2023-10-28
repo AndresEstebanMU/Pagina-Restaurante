@@ -21,18 +21,20 @@ Proyecto para la Universidad del Desarrollo creado con React que simula una pág
 - React
 - React-Bootstrap
 - Firebase / Firestore
+- Google Maps
 
 ## Página
 
 #### Visualización del landing page:
-    Contiene info
-![Alt text](./public/img/para%20el%20readme/pagina%20principal.png)  
+![Alt text]()  
 ![Alt text](./public/img/para%20el%20readme/contenido.png)
 ![Alt text](./public/img/para%20el%20readme/footer.png)  
   
 
 #### Navbar:
-![Alt text](./public/img/para%20el%20readme/Navbar.png)
+![Alt text]()
+Gracias a react podemos navegar por las distintas páginas del nav sin que la pa´gina se actualice y pintando solo lo necesario 
+
 
 
 
