@@ -2,7 +2,7 @@
 # Proyecto 4 Pagina Restaurante
 # Ventures Restauante (Página ficticia)
 
-Proyecto para la Universidad del Desarrollo creado con React que simula una página de restaurante.
+Proyecto para la Universidad del Desarrollo creado con React que simula una página de restaurante. Cabe destacar que la página se muestra como si se hubiese iniciado sesión como administrador, por lo que se puede editar el contenido del menú así como agregar platos.
 
 ## **ÍNDICE**
 
@@ -26,14 +26,26 @@ Proyecto para la Universidad del Desarrollo creado con React que simula una pág
 ## Página
 
 #### Visualización del landing page:
-![Alt text]()  
+![Alt text](./public/img/para%20el%20readme/hom.png)  
 ![Alt text](./public/img/para%20el%20readme/contenido.png)
 ![Alt text](./public/img/para%20el%20readme/footer.png)  
   
 
 #### Navbar:
-![Alt text]()
-Gracias a react podemos navegar por las distintas páginas del nav sin que la pa´gina se actualice y pintando solo lo necesario 
+![Alt text](./public/img/para%20el%20readme/navbar.png)
+Gracias a react podemos navegar por las distintas páginas del nav sin que la página se actualice y pintando solo lo necesario.
+
+
+#### Menú:
+![Alt text](./public/img/para%20el%20readme/menu.png)
+Nuestro menú contiene informacion tomada desde firestore y puede ser añadida desde la pestaña administrador.
+![Alt text](./public/img/para%20el%20readme/admin.png)
+
+
+
+#### Reserva:
+![Alt text](./public/img/para%20el%20readme/reserva.png)
+Agrega los datos ingresados en una tabla para posteriormente poder ser revisados.
 
 
 
