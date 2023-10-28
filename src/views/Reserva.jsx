@@ -115,7 +115,7 @@ const Reserva = () => {
           <input
             type="text"
             name="mesa"
-            placeholder="Ingresa Número de Mesa (1-25)"
+            placeholder="Elige: Mañana, Tarde o Noche"
             value={cliente.mesa}
             onChange={capturarInputs}
             className="input-anchos input-separados"
@@ -140,7 +140,7 @@ const Reserva = () => {
               <th>ID Reserva</th>
               <th>Cliente</th>
               <th>Email</th>
-              <th>Mesa</th>
+              <th>Horario</th>
               <th>Fecha</th>
               <th>Modificar</th>
             </tr>
@@ -151,7 +151,7 @@ const Reserva = () => {
                 <td data-titulo="ID Reserva:">{reserva.id}</td>
                 <td data-titulo="Nombre:">{reserva.nombre}</td>
                 <td data-titulo="email:">{reserva.email}</td>
-                <td data-titulo="Mesa:">{reserva.mesa}</td>
+                <td data-titulo="Horario:">{reserva.mesa}</td>
                 <td data-titulo="Fecha:">{reserva.fecha}</td>
                 <td>
                   <div>

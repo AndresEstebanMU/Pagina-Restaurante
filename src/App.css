@@ -694,9 +694,9 @@ td {
 
 
 .boton-reserva {
-  background-color: blue;
+  background-color: #113650;
   color: white;
-  border: blue;
+  border: #113650;
   border-radius: 10px;
   width: 200px;
   height: 50px;
@@ -708,7 +708,7 @@ td {
 }
 
 .boton-reserva:hover {
-  background-color: green;
+  background-color: rgb(61, 112, 224);
 
 }
 
@@ -735,3 +735,6 @@ td {
   background-color: #F9F1EF;
 }
 
+/* .boton-menu {
+  background-color: #000 ;
+} */

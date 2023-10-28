@@ -39,7 +39,7 @@ const Menu = () => {
                         <Card.Body>
                             <Card.Title>{plato.nombre}</Card.Title>
                             <Card.Text>{plato.detalle}</Card.Text>
-                            <Button variant="success">Precio:${plato.precio} clp</Button>
+                            <Button variant="black" className="boton-menu">Precio:${plato.precio} clp</Button>
                         </Card.Body>
                     </Card>
                 </div>
