@@ -85,7 +85,7 @@ const CrudMenu = () => {
     }, []);
 
     return (
-        <section>
+        <section id="administrador-fondo">
             <h1 className="text-center">Página Reservada para Administradores</h1>
             <h2 className="text-center">Agregar un Plato</h2>
             <form onSubmit={reservar}>

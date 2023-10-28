@@ -92,7 +92,7 @@ const Reserva = () => {
   }, []);
 
   return (
-    <section>
+    <section id="reserva-fondo">
       <h1 className="text-center">Realizar una Reserva</h1>
       <form onSubmit={reservar}>
         <div className="text-center mt-3">

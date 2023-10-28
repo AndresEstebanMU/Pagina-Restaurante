@@ -605,7 +605,7 @@ td {
   }
 
   table {
-    width: 90%;
+    width: auto;
     
   }
 
@@ -620,13 +620,13 @@ td {
 
   table td[data-titulo] {
     display: flex;
-    width:min-content;
+    width: min-content;
   }
 
   table td[data-titulo]::before {
     content: attr(data-titulo);
     text-align: left;
-    width: 100px;
+    width: 82px;
     color: blue;
     font-weight: bold;
 
@@ -635,6 +635,38 @@ td {
   table thead {
     display: none;
   }
+
+  .tabla-centro {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+   
+    margin: auto;
+    
+  }
+
+  .tabla-centro tr {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    width: 340px;
+    
+  }
+
+  .tabla-centro td {
+   
+    width: 300px !important;
+    
+  }
+
+  .tabla-centro td::before {
+    
+    width: 100px !important;
+    
+    
+  }
+
+  
 }
 
 .input-anchos {
@@ -694,3 +726,12 @@ td {
 #menu-fondo {
   background-color: #F9F1EF;
 }
+
+#reserva-fondo {
+  background-color: #F9F1EF;
+}
+
+#administrador-fondo {
+  background-color: #F9F1EF;
+}
+
