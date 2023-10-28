@@ -1,8 +1,8 @@
-![Banner](./assets/banner.png)
+![Banner](./public/img/para%20el%20readme/banner.png)
 # Proyecto 4 Pagina Restaurante
-# Ventures Restauante (P+agina fictcia)
+# Ventures Restauante (Página ficticia)
 
-Proyecto para la Universidad del Desarrollo creado con React que simula una página de restaurante
+Proyecto para la Universidad del Desarrollo creado con React que simula una página de restaurante.
 
 ## **ÍNDICE**
 
@@ -24,10 +24,17 @@ Proyecto para la Universidad del Desarrollo creado con React que simula una pág
 
 ## Página
 
-Ejemplos de visualización:
+#### Visualización del landing page:
+    Contiene info
 ![Alt text](./public/img/para%20el%20readme/pagina%20principal.png)  
 ![Alt text](./public/img/para%20el%20readme/contenido.png)
-![Alt text](./public/img/para%20el%20readme/footer.png)
+![Alt text](./public/img/para%20el%20readme/footer.png)  
+  
+
+#### Navbar:
+![Alt text](./public/img/para%20el%20readme/Navbar.png)
+
+
 
 
 
