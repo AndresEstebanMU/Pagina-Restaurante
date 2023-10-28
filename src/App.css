@@ -1,0 +1,467 @@
+/* navbar */
+/* #logo {
+  color: black;
+} */
+
+* {
+  
+font-family: 'Playfair Display', serif;
+
+}
+
+
+header {
+  background-color: #F9F1EF;
+  position: relative;
+  /* width: 100%; */
+}
+
+.login a {
+  text-decoration: none;
+  color: #113650;  
+}
+
+
+
+/* Portada - banner */
+#carouselHome {
+  position: fixed;
+  top: -260px;
+  z-index: -1;
+  /* width: 100%; */
+  /* height: 2000px; */
+  contain: content;
+  
+}
+
+#carouselHome .atras {
+  height: 1300px;
+}
+
+#front {
+  /* background-image: url(../img/RIC5521-1-2400x1600.jpg); */
+  position: relative;
+  background-position: bottom;
+  min-height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #FFF;
+  flex-direction: column;
+  
+}
+
+.texto-front {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: #000;
+  font-weight: 600;
+  text-shadow: #1b1b1b 1px 0 1px
+}
+
+#bajada {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-shadow: #000 1px 0 10px;
+}
+
+#descripcion {
+  text-align: center;
+  padding: 10% 20%;
+  background-color: #F9F1EF;
+  font-size: larger;
+}
+
+#reserva {
+  background-image: url(../public/img/RIC5292-2048x1392.png);
+  position: relative;
+  background-position: bottom;
+  min-height: 300px;
+  max-height: 700px;
+  /* width: 100%; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  color: #FFF;  
+
+  
+}
+
+#aqui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  width: 50%;
+  
+}
+
+#aqui .bresh {
+  background-color: #000;
+  border: #000;
+  border-radius: 0%;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aqui .bresh:hover {
+  background-color: #113650;
+  
+}
+
+/* mapa */
+.map { 
+  
+  /* padding-right: 15%; */
+  height: 100%;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+
+#mapaReserva {
+    height: 700px;
+    width: 50%;
+}
+
+/* .aqui {
+  text-align: center;
+} */
+
+
+
+/* Footer */
+#primeraParte {
+  display: flex;
+  justify-content: center;
+}
+
+
+footer {
+  position: relative;
+  background-color: #222;
+  /* display: grid;
+  grid-template: 1fr 10% 20% 100px / 50% 50%;
+  color: #bbb;
+  width: 100%; */
+  padding-top: 60px;
+  padding-bottom: 10px;
+  /* background-color: rgb(17, 56, 80); */
+  color: #fff;
+  
+}
+
+#footerIzq {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 100px;
+  text-align: center;
+}
+
+#footerIzq a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.socialmedia-container {
+  /* grid-area: 2 / 2 / span 1 / span 1; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* padding-bottom: 250px; */
+  padding: 10px 100px;
+  border-left-style: dashed;
+  border-right-style: dashed;
+  border-color: #000;
+}
+
+.socialmedia-container a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#rrss {
+  display: flex;
+  justify-content:space-evenly ;
+}
+
+
+
+
+
+#footerDer {
+  /* grid-area: 3 / 2 / span 1 / span 1; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 100px;
+}
+
+.footerReserva {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerReserva .bresh {
+    color: #000;
+    background-color: #F9F1EF;
+    border: #000;
+    border-radius: 0%;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerReserva .bresh:hover{  
+  background-color: #113650;  
+}
+
+#imagenFooter {
+  display: flex;
+  justify-content: center;
+  
+  /* width: 400px; */
+  padding-top: 20px;
+}
+
+#logoFooter {
+  display: flex;
+  justify-content: center;
+  
+  /* background-color: rgb(17, 56, 80) */
+}
+
+.footer-container {
+  /* grid-area: 2 / 1 / span 1 / span 1; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+/* .footerReserva button {
+  width: 40%;
+} */
+
+
+
+.logo-color {
+  display: none;
+}
+
+.socialmedia-container a:hover {
+  .logo {
+      display: none;
+  }
+
+  .logo-color {
+      display: flex;
+  }
+}
+
+
+
+.footer-container a {
+  font-size: 12px;
+  color: #aaa;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.bottom {
+  /* grid-area: 5 / 1 / span 1 / span 2; */
+  display: flex;
+  flex-direction: column;
+   
+}
+
+.bottom hr {
+  width: 75%;
+  align-self: center;
+}
+
+.bottom p {
+  text-align: center;
+}
+
+
+
+/* tabla */
+
+
+
+.tabla-resultados {
+  border: 1px solid #000; /* Establece un borde sólido de 1 píxel de ancho y color negro */
+  border-collapse: collapse; /* Combina los bordes de las celdas para que se vean como uno solo */
+  
+}
+
+.tabla-resultados th, .tabla-resultados td {
+  border: 1px solid #000; /* Aplica bordes a las celdas (th y td) */
+  padding: 8px; /* Agrega espacio interno para que el contenido no esté pegado al borde */
+  max-width: 400px;
+  overflow: auto;
+}
+
+/* .about {
+  background-image: url(../public/img/esterno-giorno-brigata-al-lavoro.jpg);
+} */
+
+
+#payments {
+  grid-area: 4 / 2 / span 1 / span 1 ;
+  justify-self: center;
+  align-self: center;
+  
+}
+
+/* 1100 media queris */
+@media (max-width: 1100px) {
+  #primeraParte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .socialmedia-container {
+    /* grid-area: 2 / 2 / span 1 / span 1; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding-bottom: 250px; */
+    padding: 10px 100px;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-left: none;
+    border-right: none;
+    border-color: #000;
+    
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .navorder {
+    display: flex ;
+  }
+
+  #carouselHome {
+    right: -900px;
+    
+  }
+
+  #front {
+    min-height: 700px;
+  }
+
+  #bajada {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  #carouselHome {
+    top: 0;
+    right: -800px;
+  }
+
+  #carouselHome .atras{
+    height: 1000px;
+  }
+
+  #logo-figura {
+    display: none;
+  }
+
+  .texto-front {
+    font-size: 70px;
+  }
+
+  #reserva {
+    
+    position: relative;
+    /* background-position: center; */
+    background-size: cover;
+    
+    min-height: 300px;
+    max-height: 700px;
+    /* width: 100%; */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;  
+    
+  }
+  
+  #aqui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+  }
+
+  #mapaReserva {
+    height: 350px;
+    width: 100%;
+
+    /* background-position: center; */
+}
+}
+
+/* column, height 50% en @media de reserva aqui */
+/* @media (max-width: 380px) {
+
+} */
+
+
+/* Nosotros */
+/* #about-fondo {
+  background-color: #F9F1EF;
+} */
+
+.about {
+  background-color: #FFF;
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+  font-size: large;
+}
+
+.aboutImage img{
+  width: 100%;
+
+}
+
+/* subir */
+.ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:20px;
+  color:black;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+}
+
+
+/* dnhsgfkjgdkjshdkgj */
