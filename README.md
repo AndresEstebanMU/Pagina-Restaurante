@@ -59,8 +59,8 @@ Este proyecto es creado con fines academicos y no pretende lucrar con el contend
 ---
 
 Proyecto Realizado por Andrés Muñoz y Pablo Oyola con fines académicos.  
-https://github.com/AndresEstebanMU/Proyecto3-Grafico  
-https://github.com/poyola1976/Proyecto-3-Dashboard
+https://github.com/AndresEstebanMU/Pagina-Restaurante  
+https://github.com/poyola1976/Proyecto4-Restaurant
 
 ## Contacto
 
@@ -69,3 +69,4 @@ poyola@gmail.com
 
 ## Deploy
 
+https://master--voluble-boba-d82bef.netlify.app/
