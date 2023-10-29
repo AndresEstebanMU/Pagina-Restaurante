@@ -1,5 +1,5 @@
 import FooterReserva from "./FooterReserva"
-import Payments from "./payments"
+import Payments from "../../src/components/Payments"
 
 
 const Footer = () => {
