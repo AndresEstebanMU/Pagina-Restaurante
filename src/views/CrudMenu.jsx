@@ -51,14 +51,7 @@ const CrudMenu = () => {
         }
     };
 
-    // const eliminarReserva = async (id) => {
-    //     try {
-    //         await deleteDoc(doc(db, "Menus", id));
-    //         cargarReservas();
-    //     } catch (error) {
-    //         console.log(error);
-    //     }
-    // };
+   
 
     const eliminarReserva = async (id) => {
         const confirmar = window.confirm("¿Estás seguro de que deseas eliminar esta reserva?");
