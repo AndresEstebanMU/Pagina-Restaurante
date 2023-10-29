@@ -6,9 +6,9 @@ function FooterReserva() {
   return (
     <div className='footerReserva'>
       <br />
-      <h5>Reserva Aquí</h5>
-      <br />
-      <Button variant="primary" as={Link} to='/reserva' className='bresh' >Buscar mesa</Button>{' '}
+      <h5>Usa tu medio de pago favorito</h5>
+      
+      {/* <Button variant="primary" className='bresh' >Buscar mesa</Button>{' '} */}
       <br />
     </div>
   );

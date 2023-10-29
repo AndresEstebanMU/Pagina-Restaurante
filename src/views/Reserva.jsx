@@ -58,12 +58,17 @@ const Reserva = () => {
     }
   };
 
+ 
+
   const eliminarReserva = async (id) => {
-    try {
-      await deleteDoc(doc(db, "Reservas", id));
-      cargarReservas();
-    } catch (error) {
-      console.log(error);
+    const confirmar = window.confirm("¿Estás seguro de que deseas eliminar esta reserva?");
+    if (confirmar) {
+      try {
+        await deleteDoc(doc(db, "Reservas", id));
+        cargarReservas();
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 
