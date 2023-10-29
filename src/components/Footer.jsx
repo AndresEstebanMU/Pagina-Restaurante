@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
           <br />
           <div>
-          <img src="../../public/img/MICHELIN2023_2.png" alt="Michelin" width={'100px'} height={'100px'} />
+          <img src="/img/MICHELIN2023_2.png" alt="Michelin" width={'100px'} height={'100px'} />
           </div>
           <br />
           <div>
@@ -64,7 +64,7 @@ const Footer = () => {
 
       
       <div id="logoFooter">
-        <img src="../../public/img/logo figura.jpg" alt="logo con dibujo" className="botonLogo" width={'300px'} />
+        <img src="/img/logo figura.jpg" alt="logo con dibujo" className="botonLogo" width={'300px'} />
       </div>
 
 

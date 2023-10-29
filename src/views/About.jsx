@@ -29,7 +29,7 @@ const About = () => {
 
       </div>
       <div className="aboutImage">
-        <img src="../../public/img/esterno-giorno-brigata-al-lavoro.jpg" alt="cocina" />
+        <img src="/img/esterno-giorno-brigata-al-lavoro.jpg" alt="cocina" />
       </div>
     </section>
   )

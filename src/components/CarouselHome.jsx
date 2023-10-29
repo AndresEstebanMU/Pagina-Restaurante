@@ -13,18 +13,18 @@ const CarouselHome = () => {
       >
           <CarouselItem style={{backgroundColor: ''}}>
             <div className='item-label'>
-                <img src="../../public/img/RIC5521-1-2400x1600.jpg" alt="" className="atras" />
+                <img src="/img/RIC5521-1-2400x1600.jpg" alt="" className="atras" />
             </div>
           </CarouselItem>
           <CarouselItem style={{backgroundColor: ''}}>
             <div className='item-label'>
-                <img src="../../public/img/platos2/menu-gourmet.png" alt="" className="atras" />
+                <img src="/img/platos2/menu-gourmet.png" alt="" className="atras" />
             </div>
           </CarouselItem>
           
           <CarouselItem style={{backgroundColor: ''}}>
             <div className='item-label'>
-                <img src="../../public/img/platos2/fideos.png" alt="" className="atras" />                
+                <img src="/img/platos2/fideos.png" alt="" className="atras" />                
             </div>
           </CarouselItem>
         </Carousel>
