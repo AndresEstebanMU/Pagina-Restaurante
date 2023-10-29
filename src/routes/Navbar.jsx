@@ -12,8 +12,8 @@ function Navegation() {
       <Navbar expand="lg" className="bg-body-white" >
         <Container className='navorder'>
           <div>
-            <Navbar.Brand as={Link} to="/"><img id='logo' src="../../public/img/logo-negro.png" alt="logo" /></Navbar.Brand >
-            <Navbar.Brand as={Link} to="/"><img id='logo-figura' src="../../public/img/Screenshot_1.png" alt="logo" width={'100px'} /></Navbar.Brand >
+            <Navbar.Brand as={Link} to="/"><img id='logo' src="/img/logo-negro.png" alt="logo" /></Navbar.Brand >
+            <Navbar.Brand as={Link} to="/"><img id='logo-figura' src="/img/Screenshot_1.png" alt="logo" width={'100px'} /></Navbar.Brand >
           </div>
           <div>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
