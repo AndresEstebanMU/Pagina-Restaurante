@@ -62,9 +62,7 @@ const Footer = () => {
         </div>
       </section>
 
-      {/* <div id="imagenFooter">
-        <img src="../../public/img/logo.png" alt="logo" width={'250px'}/>
-      </div> */}
+      
       <div id="logoFooter">
         <img src="../../public/img/logo figura.jpg" alt="logo con dibujo" className="botonLogo" width={'300px'} />
       </div>

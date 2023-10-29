@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 
+//Carrusel de la pagina 'Nosotros' 
 function DarkVariantExample() {
   return (
     <Carousel fade data-bs-theme="dark">

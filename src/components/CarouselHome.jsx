@@ -1,6 +1,6 @@
 import { Carousel, CarouselItem } from "react-bootstrap";
 
-
+//Carrusel del principal del home (banner)
 const CarouselHome = () => {
   return (
     <div id="carouselHome">
