@@ -29,7 +29,7 @@ const Footer = () => {
                 <img className="logo" src="/img/logotipo-de-instagram 2.png" alt="Instagram" width="24px" height="24px"/>
                 <img className="logo-color" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Instagram.svg" alt="Instagram" width="24px" height="24px"/>
               </a>
-              <a href="facebook.com">
+              <a href="www.facebook.com">
                 <img className="logo" src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Facebook_svg-512.png" alt="Facebook" width="24px" height="24px"/>
                 <img className="logo-color" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/600px-Facebook_f_logo_%282019%29.svg.png" alt="Facbook" width="24px" height="24px"/>
               </a>
