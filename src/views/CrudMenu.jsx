@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { db } from "../config/Firebase";
 import { collection, addDoc, getDocs, deleteDoc, doc, updateDoc } from "firebase/firestore";
 import { Button } from "react-bootstrap";
-// import Table from 'react-bootstrap/Table';
 import '../../src/App.css'
+// import Table from 'react-bootstrap/Table';
 
 const CrudMenu = () => {
     const [cliente, setCliente] = useState({
@@ -57,7 +57,7 @@ const CrudMenu = () => {
         const confirmar = window.confirm("¿Estás seguro de que deseas eliminar esta reserva?");
         if (confirmar) {
           try {
-            await deleteDoc(doc(db, "Reservas", id));
+            await deleteDoc(doc(db, "Menus", id));
             cargarReservas();
           } catch (error) {
             console.log(error);
@@ -65,10 +65,18 @@ const CrudMenu = () => {
         }
       };
 
+      const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Animación suave
+        });
+    }
+
     const editarReserva = (id) => {
         const reservaToEdit = reservas.find((reserva) => reserva.id === id);
         setCliente({ ...reservaToEdit });
         setEditingId(id);
+        scrollToTop()
     };
 
     const cargarReservas = async () => {
@@ -173,7 +181,7 @@ const CrudMenu = () => {
             </div>
         </section>
     );
-};
+}
 
 export default CrudMenu;
 

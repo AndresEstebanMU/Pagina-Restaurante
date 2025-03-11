@@ -26,7 +26,7 @@ const Footer = () => {
             <h6>SÍGUENOS</h6>
             <div id="rrss">
               <a href="instagram.com" className="insta">
-                <img className="logo" src="https://seeklogo.com/images/I/instagram-logo-A807AD378B-seeklogo.com.png" alt="Instagram" width="24px" height="24px"/>
+                <img className="logo" src="/img/logotipo-de-instagram 2.png" alt="Instagram" width="24px" height="24px"/>
                 <img className="logo-color" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Instagram.svg" alt="Instagram" width="24px" height="24px"/>
               </a>
               <a href="facebook.com">
