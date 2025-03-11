@@ -25,19 +25,19 @@ const Footer = () => {
           <div>
             <h6>SÍGUENOS</h6>
             <div id="rrss">
-              <a href="instagram.com" className="insta">
+              <a href="https://www.instagram.com" className="insta">
                 <img className="logo" src="/img/logotipo-de-instagram 2.png" alt="Instagram" width="24px" height="24px"/>
                 <img className="logo-color" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Instagram.svg" alt="Instagram" width="24px" height="24px"/>
               </a>
-              <a href="www.facebook.com">
+              <a href="https://www.facebook.com">
                 <img className="logo" src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Facebook_svg-512.png" alt="Facebook" width="24px" height="24px"/>
                 <img className="logo-color" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/600px-Facebook_f_logo_%282019%29.svg.png" alt="Facbook" width="24px" height="24px"/>
               </a>
-              <a href="twitter.com">
+              <a href="https://www.twitter.com">
                 <img className="logo" src="https://www.svgrepo.com/show/11841/twitter.svg" alt="Twitter" width="24px" height="24px"/>
                 <img className="logo-color" src="https://www.svgrepo.com/show/111237/twitter.svg" alt="Twitter" width="24px" height="24px"/>
               </a>
-              <a href="tiktok.com">
+              <a href="https://www.tiktok.com">
                 <img className="logo" src="https://freelogopng.com/images/all_img/1655890314black-tiktok-logo-png.png" alt="Tiktok" width="20px" height="24px"/>
                 <img className="logo-color" src="https://freelogopng.com/images/all_img/1655890216tiktok-logo-png-white.png" alt="Tiktok" width="20px" height="24px"/>
               </a>

@@ -30,7 +30,7 @@ function Navegation() {
                   <Login />
                   
                 </NavDropdown>
-                <Nav.Link  href=''><img className="logo" src="/img/logotipo-de-instagram 2.png" alt="Instagram" width="24px" height="24px"/></Nav.Link>
+                <Nav.Link  href='https://www.instagram.com'><img className="logo" src="/img/logotipo-de-instagram 2.png" alt="Instagram" width="24px" height="24px"/></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </div>  
