@@ -2,10 +2,14 @@ import { useState, useEffect } from "react"
 import { db } from "../config/Firebase"
 import { collection, getDocs } from "firebase/firestore"
 import { Button, Card, CardGroup} from "react-bootstrap"
+// import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+import CardSkeleton from "../components/CardSkeleton"
 
 const Menu = () => {
 
     const [menu, setMenu] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         const getMenu = async() => {
@@ -19,6 +23,7 @@ const Menu = () => {
                 })
 
                 setMenu(docs);
+                setIsLoading(false);
 
             } catch (error) {
                 console.log(error)
@@ -31,9 +36,12 @@ const Menu = () => {
     //Aquí va el menú
     <div id="menu-fondo">
         <h1 className="text-center">Menú</h1>
-        <CardGroup className="justify-content-center mt-3">
+        {/* {isLoading && <p>Cargando...</p>} */}
+        
+        <CardGroup className="justify-content-center mt-3" >
+        {isLoading && <CardSkeleton cards={15} />}
             {menu.map((plato) => (
-                <div key={plato.id} className="mx-3 ms-1 text-center">    
+                <div key={plato.id } className="mx-3 ms-1 text-center" >    
                     <Card style={{width: "18rem", height:"380px"}}>
                         <Card.Img style={{height: "200px"}} variant="top" src={plato.imagen} alt={plato.nombre} />
                         <Card.Body>
